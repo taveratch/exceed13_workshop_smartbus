@@ -34,6 +34,7 @@ var TimerMixin = require('react-timer-mixin');
               background: 'url(../images/bus.png) no-repeat',
               backgroundSize: "100% 100%",
               height: "500px",
+              width: "1000px",
               margin: 30
             };
             /* JSX */

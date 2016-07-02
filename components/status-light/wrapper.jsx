@@ -11,7 +11,8 @@ var Rb = require('react-bootstrap');
             var style = {
               backgroundColor: "#FFF",
               borderRadius: 1000,
-              height: 25
+              height: 30,
+              textAlign: "center"
             };
             var colStyle = {
               textAlign: "center"
@@ -22,15 +23,18 @@ var Rb = require('react-bootstrap');
             /* JSX */
             return (
                 <div style={style}>
-                    <Col xs={4} sm={4} style={colStyle}>
-                      <Light url={vm.isStatus(status,'red') ? path+'red.png' : path+'gray.png' }/> {/* Red light */}
-                    </Col>
-                    <Col xs={4} sm={4} style={colStyle}>
-                      <Light url={vm.isStatus(status,'yellow') ? path+'yellow.png' : path+'gray.png' }/> {/* Red light */}
-                    </Col>
-                    <Col xs={4} sm={4} style={colStyle}>
-                      <Light url={vm.isStatus(status,'green') ? path+'green.png' : path+'gray.png' }/> {/* Red light */}
-                    </Col>
+                    <div style={{paddingTop: "3%"}}>
+                      <Col xs={4} sm={4} style={colStyle}>
+                        <Light url={vm.isStatus(status,'red') ? path+'red.png' : path+'gray.png' }/> {/* Red light */}
+                      </Col>
+                      <Col xs={4} sm={4} style={colStyle}>
+                        <Light url={vm.isStatus(status,'yellow') ? path+'yellow.png' : path+'gray.png' }/> {/* Red light */}
+                      </Col>
+                      <Col xs={4} sm={4} style={colStyle}>
+                        <Light url={vm.isStatus(status,'green') ? path+'green.png' : path+'gray.png' }/> {/* Red light */}
+                      </Col>
+                    </div>
+
                 </div>
             );
         }
